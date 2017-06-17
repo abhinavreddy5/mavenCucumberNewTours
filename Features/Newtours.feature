@@ -12,5 +12,4 @@ Feature: Title of your feature
       | Last_Name  | Tummalapally |
       | Country    | India        |
 
-  
- 
+
