@@ -7,8 +7,10 @@ import java.util.Map;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.jpmc.pageActions.NTRegisterActions;
+import com.jpmc.pageActions.SupportActions;
 import com.jpmc.pages.GooglePage;
 import com.jpmc.pages.NewtoursHome;
 import com.jpmc.pages.NewtoursRegister;
@@ -25,8 +27,10 @@ public class PageSteps {
 	GooglePage gp;
 	NewtoursHome ntHome;
 	NTRegisterActions ntRegisterActions;
+	WebDriverWait wait;
+	SupportActions supportActions;	   
 	
-		   
+	//google page
 	
 	@Given("^I open the Home Page$")
 	public void i_open_the_Home_Page() throws Throwable {
@@ -51,7 +55,7 @@ public class PageSteps {
 		driver.quit();
 	}
 
-//newtours
+//newtours navigation
 	
 	@Given("^I navigate to newtours$")
 	public void I_navigate_to_newtours()  {
@@ -61,10 +65,14 @@ public class PageSteps {
 		
 	}
 
+	
+	//register page
+	
 	@Given("^I click \"([^\"]*)\"$")
 	public void I_click(String arg1)  {
 		
 		ntHome=new NewtoursHome(driver);
+		System.out.println("Clicking Register "+arg1);
 		ntHome.clickRegister().click();
 	    
 	}
@@ -73,18 +81,41 @@ public class PageSteps {
 	public void I_fill_the_form_with_data(DataTable datatable)  {
 		
 		ntRegisterActions=new NTRegisterActions(driver);
-		//System.out.println(ntRegisterActions.getJ());
-		
-		System.out.println(ntRegisterActions);
 	     
+		
 		ntRegisterActions.formFill(datatable);
-		//Hey There
-	    
-	   
+
 	   
 	    }
 	    
+//support page
+	
+	@Then("^I Click on support$")
+	public void I_Click_on_support()  {
+		
+		wait=new WebDriverWait(driver,10000);
+		
+		 supportActions=new SupportActions();
+		supportActions.clickSupport(wait);
+		
+		
 	    
+		
+	}
+
+	@Then("^I click on Back$")
+	public void I_click_on_Back()  {
+	   
+		if (wait==null){
+			wait=new WebDriverWait(driver,10000);
+		}
+	
+	if (supportActions==null){
+		supportActions=new SupportActions();
+	}
+		
+	supportActions.clickBackHome(wait);
+	}
 	    
 	   
 

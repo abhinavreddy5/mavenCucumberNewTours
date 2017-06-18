@@ -5,6 +5,7 @@ import java.util.Map;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.jpmc.pages.NewtoursRegister;
 
@@ -22,7 +23,7 @@ public NTRegisterActions(WebDriver driver) {
 public void formFill(DataTable datatable){
 		
 
-		List<Map<String,String>> dataArray=datatable.asMaps();
+		List<Map<String,String>> dataArray=datatable.asMaps(String.class,String.class);  // asMaps() method takes two arguments on for key type and one for value type
 		 String field=null;
 		    String value=null;
 		    
