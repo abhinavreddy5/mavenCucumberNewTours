@@ -34,10 +34,6 @@ public class PageSteps extends PageStepsObjects {
 		driver.get("http://www.google.com.au");
 		 gp=new GooglePage(driver);
 		
-		System.out.println("Line entered before Git");
-		System.out.println("Hey There Eclipse");
-		
-		System.out.println("Test Conflict");
 		
 	    
 	}
@@ -47,7 +43,7 @@ public class PageSteps extends PageStepsObjects {
 		
 		gp.search().sendKeys(text);
 		System.out.println("Entered text = "+text);
-		System.out.println("Hey There GIT");
+		
 	}
 	
 	@Then("^I close the browser$")
