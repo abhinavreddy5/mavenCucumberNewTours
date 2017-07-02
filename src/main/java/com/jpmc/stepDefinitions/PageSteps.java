@@ -21,21 +21,16 @@ import cucumber.api.java.en.Then;
 
 
 
-public class PageSteps {
+public class PageSteps extends PageStepsObjects {
 	
-	WebDriver driver;
-	GooglePage gp;
-	NewtoursHome ntHome;
-	NTRegisterActions ntRegisterActions;
-	WebDriverWait wait;
-	SupportActions supportActions;	   
+		   
 	
 	//google page
 	
 	@Given("^I open the Home Page$")
 	public void i_open_the_Home_Page() throws Throwable {
 	    
-		driver=new FirefoxDriver();
+		//driver=new FirefoxDriver();
 		driver.get("http://www.google.com.au");
 		 gp=new GooglePage(driver);
 		

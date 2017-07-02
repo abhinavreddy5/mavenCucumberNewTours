@@ -1,6 +1,7 @@
 D:\Software Testing\Eclipse examples\Testing_Workspace_3\cucumber\src\main\java\com\jpmc\pages\GooglePage.java
 D:\Software Testing\Eclipse examples\Testing_Workspace_3\cucumber\src\main\java\com\jpmc\pages\NewtoursRegister.java
 D:\Software Testing\Eclipse examples\Testing_Workspace_3\cucumber\src\main\java\com\jpmc\pages\NewtoursHome.java
+D:\Software Testing\Eclipse examples\Testing_Workspace_3\cucumber\src\main\java\com\jpmc\stepDefinitions\PageStepsObjects.java
 D:\Software Testing\Eclipse examples\Testing_Workspace_3\cucumber\src\main\java\com\jpmc\pageActions\SupportActions.java
 D:\Software Testing\Eclipse examples\Testing_Workspace_3\cucumber\src\main\java\com\jpmc\stepDefinitions\PageSteps.java
 D:\Software Testing\Eclipse examples\Testing_Workspace_3\cucumber\src\main\java\com\jpmc\pages\Support.java

@@ -74,7 +74,7 @@ formatter.match({
   "location": "PageSteps.I_navigate_to_newtours()"
 });
 formatter.result({
-  "duration": 11383801600,
+  "duration": 8352510909,
   "status": "passed"
 });
 formatter.match({
@@ -87,21 +87,21 @@ formatter.match({
   "location": "PageSteps.I_click(String)"
 });
 formatter.result({
-  "duration": 405025280,
+  "duration": 282368919,
   "status": "passed"
 });
 formatter.match({
   "location": "PageSteps.I_fill_the_form_with_data(DataTable)"
 });
 formatter.result({
-  "duration": 1666908800,
+  "duration": 1557926966,
   "status": "passed"
 });
 formatter.match({
   "location": "PageSteps.tearDown()"
 });
 formatter.result({
-  "duration": 700609920,
+  "duration": 404527482,
   "status": "passed"
 });
 });
