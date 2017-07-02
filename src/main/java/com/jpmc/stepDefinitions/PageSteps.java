@@ -34,7 +34,6 @@ public class PageSteps extends PageStepsObjects {
 		driver.get("http://www.google.com.au");
 		 gp=new GooglePage(driver);
 		
-		System.out.println("Hey There its Eclipse");
 		
 	    
 	}
