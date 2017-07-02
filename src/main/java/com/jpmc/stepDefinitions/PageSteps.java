@@ -42,7 +42,7 @@ public class PageSteps extends PageStepsObjects {
 		
 		gp.search().sendKeys(text);
 		System.out.println("Entered text = "+text);
-		
+		System.out.println("Hey There GIT");
 	}
 	
 	@Then("^I close the browser$")
