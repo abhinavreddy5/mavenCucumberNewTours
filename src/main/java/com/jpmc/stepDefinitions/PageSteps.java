@@ -33,12 +33,7 @@ public class PageSteps extends PageStepsObjects {
 		//driver=new FirefoxDriver();
 		driver.get("http://www.google.com.au");
 		 gp=new GooglePage(driver);
-		
-				System.out.println("Hi Git");
-	  System.out.println("Hey Eclipse");
-
-		
-	    
+		    
 	}
 
 	@Then("^I Enter the text data \"([^\"]*)\"$")
@@ -46,7 +41,7 @@ public class PageSteps extends PageStepsObjects {
 		
 		gp.search().sendKeys(text);
 		System.out.println("Entered text = "+text);
-		System.out.println("GIT Test");
+
 		
 	}
 	
