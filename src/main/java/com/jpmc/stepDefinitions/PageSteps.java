@@ -33,7 +33,7 @@ public class PageSteps extends PageStepsObjects {
 		//driver=new FirefoxDriver();
 		driver.get("http://www.google.com.au");
 		 gp=new GooglePage(driver);
-		    
+		//Test Eclipse    
 	}
 
 	@Then("^I Enter the text data \"([^\"]*)\"$")
