@@ -13,6 +13,3 @@ Feature: Title of your feature
       | Hey There               |
       | Hey There, How are You? |
 
-Scenario: Hello
-
-Scenario: Hello2
