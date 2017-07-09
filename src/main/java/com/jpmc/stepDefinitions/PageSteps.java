@@ -21,7 +21,7 @@ import cucumber.api.java.en.Then;
 
 
 
-public class PageSteps extends PageStepsObjects {
+public class PageSteps extends ObjectsFactory {
 	
 		   
 	

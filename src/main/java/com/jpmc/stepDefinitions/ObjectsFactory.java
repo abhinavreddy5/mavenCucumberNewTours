@@ -9,7 +9,7 @@ import com.jpmc.pageActions.SupportActions;
 import com.jpmc.pages.GooglePage;
 import com.jpmc.pages.NewtoursHome;
 
-public class PageStepsObjects {
+ class ObjectsFactory  {
 	
 	WebDriver driver;
 	GooglePage gp;

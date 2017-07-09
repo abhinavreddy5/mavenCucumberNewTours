@@ -27,6 +27,7 @@ public void formFill(DataTable datatable){
 		 String field=null;
 		    String value=null;
 		    
+		    //for(Map<String,String> data:datatable.asMaps(String.class,String.class)) 
 		 for(Map<String,String> data:dataArray){
 		    	
 		    	field=data.get("Fields");
