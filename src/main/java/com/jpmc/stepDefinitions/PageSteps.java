@@ -33,7 +33,7 @@ public class PageSteps extends ObjectsFactory {
 		//driver=new FirefoxDriver();
 		driver.get("http://www.google.com.au");
 		 gp=new GooglePage(driver);
-		//Test Eclipse    
+		System.out.println("Hey There"); 
 	}
 
 	@Then("^I Enter the text data \"([^\"]*)\"$")
